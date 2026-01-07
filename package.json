@@ -1,0 +1,33 @@
+{
+    "name": "fynd-task2-feedback-app",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "prebuild": "prisma generate",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "postinstall": "prisma generate",
+        "prisma:generate": "prisma generate",
+        "prisma:migrate": "prisma migrate deploy",
+        "prisma:push": "prisma db push"
+    },
+    "dependencies": {
+        "@google/generative-ai": "^0.11.2",
+        "@prisma/client": "^5.22.0",
+        "next": "14.1.0",
+        "openai": "^4.28.4",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+        "@types/node": "^20.11.0",
+        "@types/react": "^18.2.48",
+        "@types/react-dom": "^18.2.18",
+        "eslint": "^8.56.0",
+        "eslint-config-next": "14.1.0",
+        "prisma": "^5.22.0",
+        "typescript": "^5.3.3"
+    }
+}
